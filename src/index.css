@@ -4,3 +4,8 @@
   --primary: "#ff8901",;
   --secondary: "#fb923c";
 }
+
+.active {
+  color: var(--primary);
+  background-color: white;
+}

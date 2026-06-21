@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import { CiFacebook } from "react-icons/ci";
-import { CiInstagram } from "react-icons/ci";
-import { CiYoutube } from "react-icons/ci";
+import { CiFacebook, CiInstagram, CiYoutube } from "react-icons/ci";
 import { PiTiktokLogoThin } from "react-icons/pi";
 import { FaRegFutbol } from "react-icons/fa";
 import { SiFifa } from "react-icons/si";
@@ -11,9 +9,9 @@ export const Footer = () => {
         <footer className="flex flex-col justify-center items-center w-full py-20 bg-linear-to-b from-[#5524B7] to-[#380B60] text-white/70 ">
             <Link to="/">
                 <div className="text-2xl flex items-center gap-2 font-bold uppercase">
-                    <FaRegFutbol className="text-5xl text-amber-600 ml-3" />
-                    <p>Futboleros</p>
-                    <p className="text-amber-600">Killa</p>
+                    <FaRegFutbol className="text-5xl text-amber-600 ml-3 animate-bounce" />
+                    <p className="animate-pulse">Futboleros</p>
+                    <p className="text-amber-600 animate-pulse">Killa</p>
                 </div>
             </Link>
             <div className="flex gap-4 p-2 border mt-4 rounded-2xl">

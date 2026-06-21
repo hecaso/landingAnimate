@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const ResponsiveMenu = ({ open, data }) => {
 
@@ -13,23 +13,23 @@ export const ResponsiveMenu = ({ open, data }) => {
         <AnimatePresence mode="await">
             {open && (
                 <motion.div {...animation} className="absolute top-20 left-0 w-full h-screen z-30">
-                    <div className=" flex flex-col justify-center items-center text-xl font-semibold uppercase bg-amber-200 text-white py-6 m-6 rounded-3xl md:hidden">
+                    <div className="fixed w-[90%] flex flex-col justify-center items-center text-xl font-semibold uppercase bg-amber-200 text-white py-6 m-6 rounded-3xl md:hidden">
 
-                        <Link to="/" className="py-1 px-3 text-lg font-semibold text-amber-600 hover:text-amber-600 hover:font-semibold hover:w-full hover:text-center  hover:bg-white transition duration-300">
+                        <NavLink to="/" activeClassName="active" className="py-1 px-3 text-lg font-semibold text-amber-600 hover:text-amber-600 hover:font-semibold hover:w-full hover:text-center  hover:bg-white transition duration-300">
                             Inicio
-                        </Link>
+                        </NavLink>
 
-                        <Link to="Nosotros" className="py-1 px-3 text-lg font-semibold text-amber-600 hover:text-amber-600 hover:font-semibold hover:w-full hover:text-center  hover:bg-white transition duration-300">
+                        <NavLink to="Nosotros" activeClassName="active" className="py-1 px-3 text-lg font-semibold text-amber-600 hover:text-amber-600 hover:font-semibold hover:w-full hover:text-center  hover:bg-white transition duration-300">
                             Nosotros
-                        </Link>
+                        </NavLink>
 
-                        <Link to="Torneos" className="py-1 px-3 text-lg font-semibold text-amber-600 hover:text-amber-600 hover:font-semibold hover:w-full hover:text-center  hover:bg-white transition duration-300">
+                        <NavLink to="Torneos" activeClassName="active" activeClassName="active" className="py-1 px-3 text-lg font-semibold text-amber-600 hover:text-amber-600 hover:font-semibold hover:w-full hover:text-center  hover:bg-white transition duration-300">
                             Torneos
-                        </Link>
+                        </NavLink>
                         
-                        <Link to="Contacto" className="py-1 px-3 text-lg font-semibold text-amber-600 hover:text-amber-600 hover:font-semibold hover:w-full hover:text-center  hover:bg-white transition duration-300">
+                        <NavLink to="Contacto" activeClassName="active" activeClassName="active" className="py-1 px-3 text-lg font-semibold text-amber-600 hover:text-amber-600 hover:font-semibold hover:w-full hover:text-center  hover:bg-white transition duration-300">
                             Contacto
-                        </Link>
+                        </NavLink>
 
 
                     </div>
